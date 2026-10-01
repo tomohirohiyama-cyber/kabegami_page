@@ -68,26 +68,34 @@
             <!-- ========================================== -->
             <!-- ▲▲▲ コピペするブロックはここまで ▲▲▲ -->
             <!-- ========================================== -->
-
-
-            <!-- サンプル2 -->
             <article class="group bg-white rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden flex flex-col border border-slate-100">
+                <!-- 画像部分 -->
                 <div class="aspect-[4/3] overflow-hidden bg-slate-200 relative">
-                    <img src="media/GirlsSmall.png" alt="イラスト作品" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out">
+                    <!-- srcのURLを変更して画像を指定します -->
+                    <img src="media/GirlsSmall.png" 
+                         alt="イラスト作品" 
+                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out">
                 </div>
+                
+                <!-- テキスト＆ボタン部分 -->
                 <div class="p-5 flex flex-col flex-grow">
                     <h2 class="text-lg font-bold text-slate-900 line-clamp-1 text-ellipsis">ツイン</h2>
                     <p class="text-sm text-slate-500 mt-1 mb-6 flex items-center gap-1">
-                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg>
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg>
                         氷山トモヒロ
                     </p>
-                    <a href="media/GirlsSmall.png"　download="ツイン.png" 
-                       target="_blank" class="mt-auto flex items-center justify-center gap-2 w-full bg-slate-900 hover:bg-indigo-600 text-white font-medium py-2.5 px-4 rounded-xl transition-colors duration-200">
-                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                    
+                    <!-- ダウンロードボタン (hrefに画像のURL、download属性で保存時のファイル名を指定) -->
+                    <a href="media/GirlsSmall.png" 
+                       download="ツイン.png" 
+                       target="_blank"
+                       class="mt-auto flex items-center justify-center gap-2 w-full bg-slate-900 hover:bg-indigo-600 text-white font-medium py-2.5 px-4 rounded-xl transition-colors duration-200 focus:ring-4 focus:ring-indigo-100">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
                         ダウンロード
                     </a>
                 </div>
             </article>
+
 
         </div>
     </main>
